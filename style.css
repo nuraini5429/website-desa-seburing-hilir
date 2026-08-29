@@ -29,14 +29,17 @@ header {
     width: 100%;
     background: #ffffff;
     box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+
     position: sticky;
     top: 0;
+
     z-index: 1000;
 }
 
 .navbar {
     max-width: 1200px;
     margin: auto;
+
     padding: 18px 25px;
 
     display: flex;
@@ -52,14 +55,19 @@ header {
 
 .nav-menu {
     display: flex;
+
     list-style: none;
+
     gap: 25px;
 }
 
 .nav-menu a {
     text-decoration: none;
+
     color: #26352b;
+
     font-weight: 600;
+
     transition: 0.3s;
 }
 
@@ -70,7 +78,9 @@ header {
 
 .menu-toggle {
     display: none;
+
     font-size: 28px;
+
     cursor: pointer;
 }
 
@@ -87,13 +97,16 @@ header {
             rgba(0, 0, 0, 0.45),
             rgba(0, 0, 0, 0.45)
         ),
-        url("img/desa.jpg") center/cover no-repeat;
+        url("img/desa.jpeg") center/cover no-repeat;
 
     display: flex;
+
     align-items: center;
+
     justify-content: center;
 
     text-align: center;
+
     color: white;
 
     padding: 30px;
@@ -105,18 +118,23 @@ header {
 
 .hero-small {
     font-size: 18px;
+
     letter-spacing: 4px;
+
     margin-bottom: 12px;
 }
 
 .hero h1 {
     font-size: 55px;
+
     line-height: 1.2;
+
     margin-bottom: 20px;
 }
 
 .hero-content > p:not(.hero-small) {
     font-size: 18px;
+
     margin-bottom: 30px;
 }
 
@@ -131,6 +149,7 @@ header {
     padding: 13px 30px;
 
     background: #2e8b46;
+
     color: white;
 
     text-decoration: none;
@@ -144,6 +163,7 @@ header {
 
 .btn:hover {
     background: #1f6833;
+
     transform: translateY(-3px);
 }
 
@@ -155,23 +175,29 @@ header {
 .about,
 .features {
     max-width: 1200px;
+
     margin: auto;
+
     padding: 80px 25px;
 }
 
 .section-title {
     text-align: center;
+
     margin-bottom: 45px;
 }
 
 .section-title p {
     color: #2e8b46;
+
     font-weight: bold;
+
     letter-spacing: 2px;
 }
 
 .section-title h2 {
     font-size: 35px;
+
     margin-top: 5px;
 }
 
@@ -192,6 +218,7 @@ header {
 
 .about-image img {
     width: 100%;
+
     height: 380px;
 
     object-fit: cover;
@@ -204,11 +231,13 @@ header {
 
 .about-text h3 {
     font-size: 30px;
+
     margin-bottom: 15px;
 }
 
 .about-text p {
     margin-bottom: 18px;
+
     color: #5c685f;
 }
 
@@ -248,6 +277,7 @@ header {
 
 .card img {
     width: 100%;
+
     height: 230px;
 
     object-fit: cover;
@@ -261,6 +291,7 @@ header {
 
 .card h3 {
     font-size: 21px;
+
     margin-bottom: 8px;
 }
 
@@ -279,7 +310,7 @@ header {
             rgba(35, 100, 50, 0.78),
             rgba(35, 100, 50, 0.78)
         ),
-        url("img/desa.jpg") center/cover no-repeat;
+        url("img/desa.jpeg") center/cover no-repeat;
 
     color: white;
 
@@ -290,6 +321,7 @@ header {
 
 .page-header h1 {
     font-size: 45px;
+
     margin-bottom: 10px;
 }
 
@@ -325,11 +357,13 @@ header {
 
 .content-box h2 {
     color: #24733b;
+
     margin-bottom: 15px;
 }
 
 .content-box p {
     margin-bottom: 12px;
+
     color: #5c685f;
 }
 
@@ -400,11 +434,13 @@ header {
 
 .gallery-caption h3 {
     color: #24733b;
+
     margin-bottom: 5px;
 }
 
 .gallery-caption p {
     color: #667168;
+
     font-size: 14px;
 }
 
@@ -427,6 +463,7 @@ footer {
 
 .footer-content h3 {
     font-size: 22px;
+
     margin-bottom: 5px;
 }
 
@@ -436,12 +473,13 @@ footer {
 
 .copyright {
     margin-top: 15px;
+
     font-size: 14px;
 }
 
 
 /* =========================
-   RESPONSIVE TABLET
+   TABLET
 ========================= */
 
 @media (max-width: 900px) {
@@ -467,12 +505,11 @@ footer {
     .about-content {
         grid-template-columns: 1fr;
     }
-
 }
 
 
 /* =========================
-   RESPONSIVE HP
+   HP
 ========================= */
 
 @media (max-width: 650px) {
@@ -527,6 +564,7 @@ footer {
 
     .hero-small {
         font-size: 14px;
+
         letter-spacing: 2px;
     }
 
@@ -557,6 +595,5 @@ footer {
     .about-image img {
         height: 280px;
     }
-
 }
 ```
