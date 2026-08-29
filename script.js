@@ -23,7 +23,6 @@ if (menuToggle && navMenu) {
 // =========================
 // MENUTUP MENU
 // =========================
-// Menu akan tertutup setelah link diklik
 
 const navLinks = document.querySelectorAll(".nav-menu a");
 
@@ -31,7 +30,9 @@ navLinks.forEach(function (link) {
 
     link.addEventListener("click", function () {
 
-        navMenu.classList.remove("show");
+        if (navMenu) {
+            navMenu.classList.remove("show");
+        }
 
     });
 
