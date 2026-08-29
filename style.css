@@ -14,11 +14,12 @@ html {
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     line-height: 1.6;
-    background: #f5f8f4;
+    background: #f4f8f4;
     color: #26352b;
 }
+
 
 /* =========================
    NAVBAR
@@ -27,7 +28,7 @@ body {
 header {
     width: 100%;
     background: #ffffff;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -37,6 +38,7 @@ header {
     max-width: 1200px;
     margin: auto;
     padding: 18px 25px;
+
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -68,9 +70,10 @@ header {
 
 .menu-toggle {
     display: none;
-    font-size: 27px;
+    font-size: 28px;
     cursor: pointer;
 }
+
 
 /* =========================
    HERO
@@ -78,37 +81,45 @@ header {
 
 .hero {
     min-height: 85vh;
+
     background:
-        linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+        linear-gradient(
+            rgba(0, 0, 0, 0.45),
+            rgba(0, 0, 0, 0.45)
+        ),
         url("img/desa.jpg") center/cover no-repeat;
 
     display: flex;
     align-items: center;
     justify-content: center;
+
     text-align: center;
     color: white;
+
     padding: 30px;
 }
 
 .hero-content {
-    max-width: 750px;
+    max-width: 800px;
 }
 
-.hero-content p:first-child {
+.hero-small {
     font-size: 18px;
-    letter-spacing: 3px;
-    margin-bottom: 10px;
+    letter-spacing: 4px;
+    margin-bottom: 12px;
 }
 
 .hero h1 {
     font-size: 55px;
+    line-height: 1.2;
     margin-bottom: 20px;
 }
 
-.hero p {
+.hero-content > p:not(.hero-small) {
     font-size: 18px;
     margin-bottom: 30px;
 }
+
 
 /* =========================
    BUTTON
@@ -116,12 +127,18 @@ header {
 
 .btn {
     display: inline-block;
-    padding: 13px 28px;
+
+    padding: 13px 30px;
+
     background: #2e8b46;
     color: white;
+
     text-decoration: none;
+
     border-radius: 30px;
+
     font-weight: bold;
+
     transition: 0.3s;
 }
 
@@ -129,6 +146,7 @@ header {
     background: #1f6833;
     transform: translateY(-3px);
 }
+
 
 /* =========================
    SECTION
@@ -157,23 +175,31 @@ header {
     margin-top: 5px;
 }
 
+
 /* =========================
    ABOUT
 ========================= */
 
 .about-content {
     display: grid;
+
     grid-template-columns: 1fr 1fr;
+
     gap: 50px;
+
     align-items: center;
 }
 
 .about-image img {
     width: 100%;
     height: 380px;
+
     object-fit: cover;
+
     border-radius: 20px;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+
+    box-shadow:
+        0 10px 25px rgba(0, 0, 0, 0.12);
 }
 
 .about-text h3 {
@@ -186,43 +212,62 @@ header {
     color: #5c685f;
 }
 
+
 /* =========================
    CARDS
 ========================= */
 
 .cards {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
     gap: 25px;
 }
 
 .card {
     background: white;
+
     border-radius: 18px;
+
     overflow: hidden;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.08);
+
     transition: 0.3s;
 }
 
 .card:hover {
     transform: translateY(-8px);
+
+    box-shadow:
+        0 15px 30px rgba(0, 0, 0, 0.12);
 }
 
 .card img {
     width: 100%;
     height: 230px;
+
     object-fit: cover;
+
+    display: block;
+}
+
+.card-content {
+    padding: 20px;
 }
 
 .card h3 {
-    padding: 20px 20px 8px;
     font-size: 21px;
+    margin-bottom: 8px;
 }
 
 .card p {
-    padding: 0 20px 25px;
     color: #667168;
 }
+
 
 /* =========================
    PAGE HEADER
@@ -230,11 +275,16 @@ header {
 
 .page-header {
     background:
-        linear-gradient(rgba(35,100,50,0.75), rgba(35,100,50,0.75)),
+        linear-gradient(
+            rgba(35, 100, 50, 0.78),
+            rgba(35, 100, 50, 0.78)
+        ),
         url("img/desa.jpg") center/cover no-repeat;
 
     color: white;
+
     text-align: center;
+
     padding: 100px 20px;
 }
 
@@ -243,22 +293,34 @@ header {
     margin-bottom: 10px;
 }
 
+.page-header p {
+    font-size: 17px;
+}
+
+
 /* =========================
    CONTENT
 ========================= */
 
 .content-section {
     max-width: 1000px;
+
     margin: auto;
+
     padding: 70px 25px;
 }
 
 .content-box {
     background: white;
+
     padding: 30px;
+
     margin-bottom: 25px;
+
     border-radius: 15px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.07);
+
+    box-shadow:
+        0 5px 15px rgba(0, 0, 0, 0.07);
 }
 
 .content-box h2 {
@@ -266,9 +328,19 @@ header {
     margin-bottom: 15px;
 }
 
+.content-box p {
+    margin-bottom: 12px;
+    color: #5c685f;
+}
+
 .content-box ul {
     padding-left: 25px;
 }
+
+.content-box li {
+    margin-bottom: 8px;
+}
+
 
 /* =========================
    GALLERY
@@ -276,35 +348,54 @@ header {
 
 .gallery {
     max-width: 1200px;
+
     margin: auto;
+
     padding: 70px 25px;
+
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 25px;
 }
 
 .gallery-item {
-    position: relative;
-    overflow: hidden;
-    border-radius: 15px;
     background: white;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+
+    overflow: hidden;
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 5px 15px rgba(0, 0, 0, 0.1);
+
+    transition: 0.3s;
+}
+
+.gallery-item:hover {
+    transform: translateY(-5px);
 }
 
 .gallery-item img {
     width: 100%;
-    height: 250px;
+
+    height: 260px;
+
     object-fit: cover;
+
     display: block;
+
     transition: 0.4s;
 }
 
 .gallery-item:hover img {
-    transform: scale(1.08);
+    transform: scale(1.06);
 }
 
 .gallery-caption {
-    padding: 15px;
+    padding: 18px;
 }
 
 .gallery-caption h3 {
@@ -317,20 +408,40 @@ header {
     font-size: 14px;
 }
 
+
 /* =========================
    FOOTER
 ========================= */
 
 footer {
     background: #183c24;
+
     color: white;
+
     text-align: center;
-    padding: 25px;
+
+    padding: 35px 20px;
+
     margin-top: 30px;
 }
 
+.footer-content h3 {
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+.footer-content p {
+    color: #d9e6dc;
+}
+
+.copyright {
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+
 /* =========================
-   RESPONSIVE
+   RESPONSIVE TABLET
 ========================= */
 
 @media (max-width: 900px) {
@@ -344,17 +455,25 @@ footer {
     }
 
     .cards {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns:
+            repeat(2, 1fr);
     }
 
     .gallery {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns:
+            repeat(2, 1fr);
     }
 
     .about-content {
         grid-template-columns: 1fr;
     }
+
 }
+
+
+/* =========================
+   RESPONSIVE HP
+========================= */
 
 @media (max-width: 650px) {
 
@@ -371,16 +490,27 @@ footer {
     }
 
     .nav-menu {
+
         position: absolute;
+
         top: 65px;
+
         left: 0;
+
         width: 100%;
+
         background: white;
+
         flex-direction: column;
+
         text-align: center;
+
         padding: 20px 0;
+
         display: none;
-        box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+
+        box-shadow:
+            0 5px 10px rgba(0, 0, 0, 0.1);
     }
 
     .nav-menu.show {
@@ -395,8 +525,17 @@ footer {
         font-size: 34px;
     }
 
-    .hero-content p {
+    .hero-small {
+        font-size: 14px;
+        letter-spacing: 2px;
+    }
+
+    .hero-content > p:not(.hero-small) {
         font-size: 15px;
+    }
+
+    .section-title h2 {
+        font-size: 28px;
     }
 
     .cards {
@@ -407,8 +546,17 @@ footer {
         grid-template-columns: 1fr;
     }
 
+    .page-header {
+        padding: 75px 20px;
+    }
+
     .page-header h1 {
         font-size: 35px;
     }
+
+    .about-image img {
+        height: 280px;
+    }
+
 }
 ```
