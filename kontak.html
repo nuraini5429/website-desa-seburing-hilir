@@ -11,10 +11,11 @@
         nav { display: flex; justify-content: space-between; align-items: center; }
         nav ul { display: flex; list-style: none; gap: 20px; }
         nav a { color: white; text-decoration: none; font-weight: bold; }
+        nav a:hover { text-decoration: underline; }
         .container { padding: 40px 20px; max-width: 1000px; margin: auto; }
         .card { background: white; padding: 20px; border-radius: 8px; margin-bottom: 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
         input, textarea { width: 100%; padding: 10px; margin-top: 5px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 4px; }
-        button { background: #16a34a; color: white; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer; }
+        button { background: #16a34a; color: white; padding: 10px 20px; border: none; border-radius: 4px; cursor: pointer; font-weight: bold; }
         button:hover { background: #15803d; }
         footer { background: #0f172a; color: white; text-align: center; padding: 20px; margin-top: 40px; }
     </style>
@@ -40,7 +41,7 @@
         <div class="card">
             <h2>Alamat Kantor Desa</h2>
             <p><strong>Kantor Desa Seburing Hilir</strong></p>
-            <p>Jl. Raya Desa Seburing Hilir, Kecamatan Seburing, Kabupaten Sambas, Kalimantan Barat.</p>
+            <p>Jl. Raya Desa Seburing Hilir, Kabupaten Sambas, Kalimantan Barat.</p>
             <p>Email: info@seburinghilir.desa.id</p>
         </div>
 
@@ -48,10 +49,10 @@
             <h2>Formulir Pengaduan / Aspirasi</h2>
             <form action="#">
                 <label>Nama Lengkap</label>
-                <input type="text" placeholder="Masukkan nama..." required>
+                <input type="text" placeholder="Masukkan nama Anda..." required>
                 
                 <label>Pesan / Aspirasi</label>
-                <textarea rows="4" placeholder="Tuliskan pesan..." required></textarea>
+                <textarea rows="4" placeholder="Tuliskan pesan Anda di sini..." required></textarea>
                 
                 <button type="submit">Kirim Pesan</button>
             </form>
