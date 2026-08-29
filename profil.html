@@ -1,215 +1,68 @@
-```html
 <!DOCTYPE html>
 <html lang="id">
-
 <head>
-
     <meta charset="UTF-8">
-
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
-
-    <title>
-        Profil - Desa Seburing Hilir
-    </title>
-
-    <link rel="stylesheet" href="style.css">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Desa - Desa Seburing Hilir</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
+        body { background-color: #f4f6f9; color: #333; line-height: 1.6; }
+        header { background-color: #1e3a8a; color: white; padding: 1rem 2rem; }
+        nav { display: flex; justify-content: space-between; align-items: center; }
+        nav ul { display: flex; list-style: none; gap: 20px; }
+        nav a { color: white; text-decoration: none; font-weight: bold; }
+        nav a:hover { text-decoration: underline; }
+        .container { padding: 40px 20px; max-width: 1000px; margin: auto; }
+        .card { background: white; padding: 20px; border-radius: 8px; margin-bottom: 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        footer { background: #0f172a; color: white; text-align: center; padding: 20px; margin-top: 40px; }
+    </style>
 </head>
-
 <body>
 
+    <header>
+        <nav>
+            <h2>DESA SEBURING HILIR</h2>
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="profil.html">Profil</a></li>
+                <li><a href="potensi.html">Potensi</a></li>
+                <li><a href="galeri.html">Galeri</a></li>
+                <li><a href="kontak.html">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<!-- NAVBAR -->
+    <div class="container">
+        <h1>Profil Desa Seburing Hilir</h1>
+        <br>
+        <div class="card">
+            <h2>Sejarah Singkat</h2>
+            <p>
 
-<header>
+Desa Seburing secara administratif merupakan salah satu desa yang terletak di Kecamatan Semparuk, Kabupaten Sambas, Kalimantan Barat. Sejarah terbentuknya Desa Seburing berakar dari penataan wilayah setelah kemerdekaan Republik Indonesia. Sebelum menjadi desa mandiri, wilayah Seburing merupakan bagian dari wilayah adat atau pemerintahan yang dikenal sebagai Benua IX. Wilayah tersebut mencakup beberapa pemukiman di sekitarnya, seperti Gersik, Perapakan, Serunai, Seladu, Sepinggan, Sungai Toman, dan Sei Palai.
 
-    <nav class="navbar">
+Pada tahun 1949, terjadi pemekaran wilayah yang memisahkan Seburing dari Benua IX. Pemisahan tersebut menandai berdirinya Kampung Seburing secara mandiri yang dipimpin oleh seorang Kepala Kampung. Secara tradisional, wilayah pemukiman yang berada di sepanjang aliran sungai kemudian dikenal sebagai wilayah hulu dan hilir. Perkembangan sistem pemerintahan di Indonesia kemudian membawa perubahan status Kampung Seburing. Pada tahun 1998, Kampung Seburing resmi berubah status menjadi Desa Seburing dan pemerintahan desa dipimpin oleh seorang Kepala Desa.
 
-        <div class="logo">
-            DESA SEBURING HILIR
+Saat ini, Desa Seburing memiliki luas wilayah sekitar 1.266 hektare dan secara administratif terbagi menjadi tiga dusun utama, yaitu Dusun Kartini, Dusun Mulia, dan Dusun Makmur. Masyarakat Desa Seburing sebagian besar menggantungkan kehidupan pada sektor pertanian, perkebunan, dan perikanan. Dengan perkembangan wilayah dan masyarakatnya, Desa Seburing terus mengalami kemajuan tanpa meninggalkan sejarah serta nilai-nilai budaya yang telah diwariskan dari generasi ke generasi..</p>
         </div>
 
-
-        <ul class="nav-menu">
-
-            <li>
-                <a href="index.html">
-                    Beranda
-                </a>
-            </li>
-
-            <li>
-                <a href="profil.html" class="active">
-                    Profil
-                </a>
-            </li>
-
-            <li>
-                <a href="potensi.html">
-                    Potensi
-                </a>
-            </li>
-
-            <li>
-                <a href="galeri.html">
-                    Galeri
-                </a>
-            </li>
-
-        </ul>
-
-
-        <div class="menu-toggle">
-            ☰
+        <div class="card">
+            <h2>Visi & Misi</h2>
+            <h3>Visi:</h3>
+            <p><i>"Mewujudkan Desa Seburing Hilir yang Mandiri, Sejahtera, dan Berkelanjutan Berlandaskan Gotong Royong."</i></p>
+            <br>
+            <h3>Misi:</h3>
+            <ol style="margin-left: 20px;">
+                <li>Meningkatkan kualitas pelayanan publik dan transparansi pemerintahan desa.</li>
+                <li>Meningkatkan sarana pendidikan, sosial, dan infrastruktur transportasi.</li>
+                <li>Mengembangkan ekonomi warga melalui sektor pertanian dan UMKM.</li>
+            </ol>
         </div>
-
-    </nav>
-
-</header>
-
-
-<!-- HEADER -->
-
-<section class="page-header">
-
-    <h1>
-        Profil Desa
-    </h1>
-
-    <p>
-        Mengenal Desa Seburing Hilir lebih dekat
-    </p>
-
-</section>
-
-
-<!-- CONTENT -->
-
-<section class="content-section">
-
-
-    <div class="content-box">
-
-        <h2>
-            🏡 Tentang Desa
-        </h2>
-
-        <p>
-            Desa Seburing Hilir merupakan desa yang
-            memiliki lingkungan yang asri serta kehidupan
-            masyarakat yang menjunjung tinggi kebersamaan
-            dan gotong royong.
-        </p>
-
-        <p>
-            Masyarakat desa terus berupaya mengembangkan
-            berbagai potensi yang dimiliki untuk mendukung
-            kemajuan dan kesejahteraan desa.
-        </p>
-
     </div>
 
-
-    <div class="content-box">
-
-        <h2>
-            📖 Sejarah Desa
-        </h2>
-
-        <p>
-            Desa Seburing Hilir memiliki perjalanan sejarah
-            dan perkembangan masyarakat dari waktu ke waktu.
-            Kehidupan masyarakat berkembang dengan tetap
-            menjaga nilai kebersamaan dan gotong royong.
-        </p>
-
-    </div>
-
-
-    <div class="content-box">
-
-        <h2>
-            🎯 Visi Desa
-        </h2>
-
-        <p>
-            Mewujudkan Desa Seburing Hilir yang maju,
-            aman, sejahtera, mandiri, dan memiliki
-            masyarakat yang aktif dalam pembangunan desa.
-        </p>
-
-    </div>
-
-
-    <div class="content-box">
-
-        <h2>
-            📌 Misi Desa
-        </h2>
-
-        <ul>
-
-            <li>
-                Meningkatkan pelayanan kepada masyarakat.
-            </li>
-
-            <li>
-                Meningkatkan pembangunan desa.
-            </li>
-
-            <li>
-                Mengembangkan potensi ekonomi masyarakat.
-            </li>
-
-            <li>
-                Menjaga lingkungan dan keindahan desa.
-            </li>
-
-            <li>
-                Meningkatkan kebersamaan dan gotong royong.
-            </li>
-
-            <li>
-                Mendukung pendidikan masyarakat desa.
-            </li>
-
-        </ul>
-
-    </div>
-
-
-</section>
-
-
-<!-- FOOTER -->
-
-<footer>
-
-    <div class="footer-content">
-
-        <h3>
-            Desa Seburing Hilir
-        </h3>
-
-        <p>
-            Website Informasi dan Perkenalan Desa
-        </p>
-
-        <p class="copyright">
-            © 2026 Desa Seburing Hilir.
-        </p>
-
-    </div>
-
-</footer>
-
-
-<script src="script.js"></script>
+    <footer>
+        <p>&copy; 2026 Desa Seburing Hilir. Semua Hak Dilindungi.</p>
+    </footer>
 
 </body>
-
 </html>
-```
