@@ -1,259 +1,60 @@
 <!DOCTYPE html>
 <html lang="id">
-
 <head>
-
     <meta charset="UTF-8">
-
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
-
-    <title>
-        Potensi - Desa Seburing Hilir
-    </title>
-
-    <link rel="stylesheet" href="style.css">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Potensi Desa - Desa Seburing Hilir</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
+        body { background-color: #f4f6f9; color: #333; line-height: 1.6; }
+        header { background-color: #1e3a8a; color: white; padding: 1rem 2rem; }
+        nav { display: flex; justify-content: space-between; align-items: center; }
+        nav ul { display: flex; list-style: none; gap: 20px; }
+        nav a { color: white; text-decoration: none; font-weight: bold; }
+        nav a:hover { text-decoration: underline; }
+        .container { padding: 40px 20px; max-width: 1000px; margin: auto; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+        .card { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        footer { background: #0f172a; color: white; text-align: center; padding: 20px; margin-top: 40px; }
+    </style>
 </head>
-
 <body>
 
+    <header>
+        <nav>
+            <h2>DESA SEBURING HILIR</h2>
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="profil.html">Profil</a></li>
+                <li><a href="potensi.html">Potensi</a></li>
+                <li><a href="galeri.html">Galeri</a></li>
+                <li><a href="kontak.html">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<header>
-
-    <nav class="navbar">
-
-        <div class="logo">
-            DESA SEBURING HILIR
+    <div class="container">
+        <h1>Potensi & Perekonomian Desa</h1>
+        <br>
+        <div class="grid">
+            <div class="card">
+                <h2>🌾 Pertanian & Perkebunan</h2>
+                <p>Lahan pertanian produktif menjadi penghasil utama tanaman padi, palawija, serta hasil kebun lokal.</p>
+            </div>
+            <div class="card">
+                <h2>🏪 Koperasi Merah Putih</h2>
+                <p>Wadah ekonomi rakyat untuk pembiayaan modal usaha mikro dan kebutuhan pokok warga desa.</p>
+            </div>
+            <div class="card">
+                <h2>🌉 Wisata Alam & Infrastruktur</h2>
+                <p>Jembatan gantung yang menjadi daya tarik panorama serta penghubung utama antara seburing hilir-seburing gresik aktivitas warga.</p>
+            </div>
         </div>
-
-
-        <ul class="nav-menu">
-
-            <li>
-                <a href="index.html">
-                    Beranda
-                </a>
-            </li>
-
-            <li>
-                <a href="profil.html">
-                    Profil
-                </a>
-            </li>
-
-            <li>
-                <a href="potensi.html" class="active">
-                    Potensi
-                </a>
-            </li>
-
-            <li>
-                <a href="galeri.html">
-                    Galeri
-                </a>
-            </li>
-
-        </ul>
-
-
-        <div class="menu-toggle">
-            ☰
-        </div>
-
-    </nav>
-
-</header>
-
-
-<section class="page-header">
-
-    <h1>
-        Potensi Desa
-    </h1>
-
-    <p>
-        Potensi dan fasilitas Desa Seburing Hilir
-    </p>
-
-</section>
-
-
-<section class="features">
-
-    <div class="section-title">
-
-        <p>
-            POTENSI SEBURING HILIR
-        </p>
-
-        <h2>
-            Potensi Desa
-        </h2>
-
     </div>
 
-
-    <div class="cards">
-
-
-        <!-- PERTANIAN -->
-
-        <div class="card">
-
-            <img
-                src="pertanian.jpeg"
-                alt="Pertanian"
-            >
-
-            <div class="card-content">
-
-                <h3>
-                    🌾 Pertanian
-                </h3>
-
-                <p>
-                    Pertanian menjadi salah satu potensi
-                    yang mendukung kehidupan masyarakat
-                    Desa Seburing Hilir.
-                </p>
-
-            </div>
-
-        </div>
-
-
-        <!-- KOPERASI -->
-
-        <div class="card">
-
-            <img
-                src="koperasi-merah-putih.jpeg"
-                alt="Koperasi Merah Putih"
-            >
-
-            <div class="card-content">
-
-                <h3>
-                    🏪 Koperasi Merah Putih
-                </h3>
-
-                <p>
-                    Koperasi menjadi salah satu wadah
-                    kegiatan ekonomi dan pemberdayaan
-                    masyarakat desa.
-                </p>
-
-            </div>
-
-        </div>
-
-
-        <!-- JEMBATAN -->
-
-        <div class="card">
-
-            <img
-                src="jembatan-gantung.jpeg"
-                alt="Jembatan Gantung"
-            >
-
-            <div class="card-content">
-
-                <h3>
-                    🌉 Jembatan Gantung
-                </h3>
-
-                <p>
-                    Jembatan gantung merupakan salah satu
-                    fasilitas yang menghubungkan masyarakat.
-                </p>
-
-            </div>
-
-        </div>
-
-
-        <!-- SEKOLAH -->
-
-        <div class="card">
-
-            <img
-                src="sekolah (3).jpeg"
-                alt="Sekolah"
-            >
-
-            <div class="card-content">
-
-                <h3>
-                    🏫 Pendidikan
-                </h3>
-
-                <p>
-                    Pendidikan menjadi bagian penting
-                    dalam mendukung masa depan generasi desa.
-                </p>
-
-            </div>
-
-        </div>
-
-
-        <!-- MASJID -->
-
-        <div class="card">
-
-            <img
-                src="mesjid.jpeg"
-                alt="Masjid"
-            >
-
-            <div class="card-content">
-
-                <h3>
-                    🕌 Masjid
-                </h3>
-
-                <p>
-                    Masjid menjadi tempat ibadah dan
-                    kegiatan keagamaan masyarakat.
-                </p>
-
-            </div>
-
-        </div>
-
-
-    </div>
-
-</section>
-
-
-<footer>
-
-    <div class="footer-content">
-
-        <h3>
-            Desa Seburing Hilir
-        </h3>
-
-        <p>
-            Website Informasi dan Perkenalan Desa
-        </p>
-
-        <p class="copyright">
-            © 2026 Desa Seburing Hilir.
-        </p>
-
-    </div>
-
-</footer>
-
-
-<script src="script.js"></script>
+    <footer>
+        <p>&copy; 2026 Desa Seburing Hilir. Semua Hak Dilindungi.</p>
+    </footer>
 
 </body>
-
 </html>
