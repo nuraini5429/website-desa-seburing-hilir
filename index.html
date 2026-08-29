@@ -1,337 +1,63 @@
 <!DOCTYPE html>
 <html lang="id">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Desa Seburing Hilir</title>
-
-    <link rel="stylesheet" href="style.css">
+    <title>Beranda - Desa Seburing Hilir</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
+        body { background-color: #f4f6f9; color: #333; line-height: 1.6; }
+        header { background-color: #1e3a8a; color: white; padding: 1rem 2rem; }
+        nav { display: flex; justify-content: space-between; align-items: center; }
+        nav ul { display: flex; list-style: none; gap: 20px; }
+        nav a { color: white; text-decoration: none; font-weight: bold; }
+        nav a:hover { text-decoration: underline; }
+        .hero { background: #0d9488; color: white; padding: 60px 20px; text-align: center; }
+        .hero h1 { font-size: 2.5rem; margin-bottom: 10px; }
+        .container { padding: 40px 20px; max-width: 1000px; margin: auto; }
+        .card { background: white; padding: 20px; border-radius: 8px; margin-bottom: 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        footer { background: #0f172a; color: white; text-align: center; padding: 20px; margin-top: 40px; }
+    </style>
 </head>
-
 <body>
 
-<!-- =========================
-     NAVBAR
-========================= -->
+    <header>
+        <nav>
+            <h2>DESA SEBURING HILIR</h2>
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="profil.html">Profil</a></li>
+                <li><a href="potensi.html">Potensi</a></li>
+                <li><a href="galeri.html">Galeri</a></li>
+                <li><a href="kontak.html">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<header>
+    <section class="hero">
+        <h1>Selamat Datang di Desa Seburing Hilir</h1>
+        <p>Mengenal lebih dekat keindahan alam, fasilitas, potensi, dan kebersamaan masyarakat desa.</p>
+    </section>
 
-    <nav class="navbar">
-
-        <div class="logo">
-            DESA SEBURING HILIR
-        </div>
-
-        <ul class="nav-menu">
-
-            <li>
-                <a href="index.html" class="active">
-                    Beranda
-                </a>
-            </li>
-
-            <li>
-                <a href="profil.html">
-                    Profil
-                </a>
-            </li>
-
-            <li>
-                <a href="potensi.html">
-                    Potensi
-                </a>
-            </li>
-
-            <li>
-                <a href="galeri.html">
-                    Galeri
-                </a>
-            </li>
-
-        </ul>
-
-        <div class="menu-toggle">
-            ☰
-        </div>
-
-    </nav>
-
-</header>
-
-
-<!-- =========================
-     HERO
-========================= -->
-
-<section class="hero">
-
-    <div class="hero-content">
-
-        <p class="hero-small">
-            SELAMAT DATANG DI
-        </p>
-
-        <h1>
-            DESA SEBURING HILIR
-        </h1>
-
-        <p>
-            Mengenal lebih dekat keindahan alam,
-            fasilitas, potensi, dan kehidupan
-            masyarakat Desa Seburing Hilir.
-        </p>
-
-        <a href="profil.html" class="btn">
-            Jelajahi Desa
-        </a>
-
-    </div>
-
-</section>
-
-
-<!-- =========================
-     TENTANG DESA
-========================= -->
-
-<section class="about">
-
-    <div class="section-title">
-
-        <p>
-            TENTANG DESA
-        </p>
-
-        <h2>
-            Mengenal Seburing Hilir
-        </h2>
-
-    </div>
-
-
-    <div class="about-content">
-
-        <div class="about-image">
-
-            <img
-                src="desa.jpeg"
-                alt="Pemandangan Desa Seburing Hilir"
-            >
-
-        </div>
-
-
-        <div class="about-text">
-
-            <h3>
-                Desa Seburing Hilir
-            </h3>
-
-            <p>
-                Desa Seburing Hilir merupakan desa yang
-                memiliki keindahan alam, fasilitas masyarakat,
-                serta kehidupan sosial yang penuh kebersamaan.
-            </p>
-
-            <p>
-                Website ini dibuat sebagai media informasi
-                untuk memperkenalkan Desa Seburing Hilir
-                kepada masyarakat luas.
-            </p>
-
-            <a href="profil.html" class="btn">
-                Selengkapnya
-            </a>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- =========================
-     FASILITAS
-========================= -->
-
-<section class="features">
-
-    <div class="section-title">
-
-        <p>
-            FASILITAS & POTENSI
-        </p>
-
-        <h2>
-            Yang Ada di Desa Kami
-        </h2>
-
-    </div>
-
-
-    <div class="cards">
-
-
-        <!-- SEKOLAH -->
-
+    <div class="container">
         <div class="card">
-
-            <img
-                src="sekolah (3).jpeg"
-                alt="Sekolah"
-            >
-
-            <div class="card-content">
-
-                <h3>
-                    🏫 Sekolah
-                </h3>
-
-                <p>
-                    Fasilitas pendidikan untuk mendukung
-                    kegiatan belajar dan perkembangan
-                    generasi muda desa.
-                </p>
-
-            </div>
-
+            <h2>Sekilas Desa</h2>
+            <p>Desa Seburing Hilir merupakan desa yang kaya akan keindahan alam, keramahan masyarakat, serta semangat gotong royong yang tinggi. Website ini dirancang sebagai sarana transparansi dan publikasi informasi desa.</p>
         </div>
-
-
-        <!-- MASJID -->
-
         <div class="card">
-
-            <img
-                src="mesjid.jpeg"
-                alt="Masjid"
-            >
-
-            <div class="card-content">
-
-                <h3>
-                    🕌 Masjid
-                </h3>
-
-                <p>
-                    Tempat ibadah serta tempat kegiatan
-                    keagamaan masyarakat desa.
-                </p>
-
-            </div>
-
+            <h2>Fasilitas Utama</h2>
+            <ul>
+                <li>🏫 Sekolah Desa</li>
+                <li>🕌 Masjid & Tempat Ibadah</li>
+                <li>🌉 Jembatan Gantung Penyeberangan</li>
+                <li>🏪 Koperasi Merah Putih</li>
+            </ul>
         </div>
-
-
-        <!-- JEMBATAN -->
-
-        <div class="card">
-
-            <img
-                src="jembatan-gantung.jpeg"
-                alt="Jembatan Gantung"
-            >
-
-            <div class="card-content">
-
-                <h3>
-                    🌉 Jembatan Gantung
-                </h3>
-
-                <p>
-                    Salah satu fasilitas penghubung
-                    masyarakat di Desa Seburing Hilir.
-                </p>
-
-            </div>
-
-        </div>
-
-
-        <!-- KOPERASI -->
-
-        <div class="card">
-
-            <img
-                src="koperasi-merah-putih.jpeg"
-                alt="Koperasi Merah Putih"
-            >
-
-            <div class="card-content">
-
-                <h3>
-                    🏪 Koperasi Merah Putih
-                </h3>
-
-                <p>
-                    Wadah kegiatan ekonomi masyarakat
-                    untuk mendukung pemberdayaan desa.
-                </p>
-
-            </div>
-
-        </div>
-
-
-        <!-- PERTANIAN -->
-
-        <div class="card">
-
-            <img
-                src="pertanian.jpeg"
-                alt="Pertanian"
-            >
-
-            <div class="card-content">
-
-                <h3>
-                    🌾 Pertanian
-                </h3>
-
-                <p>
-                    Salah satu potensi desa yang mendukung
-                    kehidupan dan perekonomian masyarakat.
-                </p>
-
-            </div>
-
-        </div>
-
-
     </div>
 
-</section>
-
-
-<!-- =========================
-     FOOTER
-========================= -->
-
-<footer>
-
-    <div class="footer-content">
-
-        <h3>
-            Desa Seburing Hilir
-        </h3>
-
-        <p>
-            Website Informasi dan Perkenalan Desa
-        </p>
-
-        <p class="copyright">
-            © 2026 Desa Seburing Hilir. Semua Hak Dilindungi.
-        </p>
-
-    </div>
-
-</footer>
-
-
-<script src="script.js"></script>
+    <footer>
+        <p>&copy; 2026 Desa Seburing Hilir. Semua Hak Dilindungi.</p>
+    </footer>
 
 </body>
-
 </html>
